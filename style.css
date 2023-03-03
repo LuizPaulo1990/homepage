@@ -43,6 +43,34 @@ header {
     min-width: 375px;
 }
 
+/* Voce pode fazer essas ligações de outra forma. Irei deixar o exemplo comentado.
+Depois voce implementa. Tente aplicar esse modelo para todo o CSS
+
+
+header {
+    &img{
+        width: 80px;
+        position: relative;
+        top: 10px;
+
+    }
+
+    &nav {
+        text-align: right;
+
+        &a{
+            text-decoration: none;
+            color:hsl(230, 3%, 59%);
+            font-weight: 400;
+            font-size: 15px;
+            padding: 0px 15px 10px;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+}
+
+*/
 header > img {
     width: 80px;
     position: relative;
