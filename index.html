@@ -1,71 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News homepage Frontend Mentor</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>News Homepage</title>
-
 </head>
 <body>
-   <header>
-    <img src="images/logo.svg" alt="logo">
-    <nav>
-        <!-- Porfavor colocar links reais para os hrefees -->
-        <a href="#">Home</a>
-        <a href="#">New</a>
-        <a href="#">Popular</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
-    </nav>
-   </header>
-   <main>
-    <article>
-        <section class="main">
-            <picture>
-                <source media="(max-width: 750px)" srcset="images/image-web-3-mobile.jpg">
-                <img src="images/image-web-3-desktop.jpg" alt="image web">
-            </picture>
-            <h1>The Bright<br> Future of<br> Web 3.0?</h1>
-            <p>We dive into the next evolution of the web that<br> claims to put the power of the plataform back<br> into the hands of the people. But is it really<br> fulfilling its promise?</p>
-            <button>READ MORE</button>
-        </section>
-        <section class="new">
-            <h1>New</h1>
-            <h2><a href="#">Hydrogen VS Electric Cars</a></h2>
-            <p>Will hydrogen-fueled cars ever catch up<br> to Evs?</p>
-            <hr>
-            <h2><a href="#">The Downsides of AI Artistry</a></h2>
-            <p>What are the possible adverse effects of<br> on-demand AI image generation?</p>
-            <hr>
-            <h2><a href="#">Is VC Funding Drying Up?</a></h2>
-            <p>Private funding by VC firms is down 50%<br> YOY. We take a look at what that means.</p>
-        </section>
-        <section class="last">
-            <img src="images/image-retro-pcs.jpg" alt="retropc">
-            <div class="complements">
-                <h2>01</h2>
-                <h3><a href="#">Reviving Retro PCs</a></h3>
-                <p>What happens when old PCs<br>are given modern upgrades?</p>
+    <header>
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <nav id="menu">
+           
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+        </nav>
+        <button class="butao-menu"><img src="images/icon-menu.svg" alt="butao-menu" onclick="gerarMenu()"></button>
+    </header>
+    <main>
+        <section class="sec-principal">
+             <picture>
+                <source media="(max-width: 400px)" srcset="images/image-web-3-mobile.jpg" type="images/jpg">
+                <img src="images/image-web-3-desktop.jpg" alt="imagem fundo" class="imagemPrincipal">
+             </picture>
+            <div class="div1">
+                <h1 class="div1-principal">The Bright Future of Web 3.0?</h1>
             </div>
-            <img src="images/image-top-laptops.jpg" alt="laptops">
-            <div class="complements">
-                <h2>02</h2>
-                <h3><a href="#">Top 10 Laptops of 2022</a></h3>
-                <p>Our best picks for various<br>needs and budgets.</p>
-            </div>
-            <img src="images/image-gaming-growth.jpg" alt="gaming">
-            <div class="complements">
-                <h2>03</h2>
-                <h3><a href="#">The Growth of Gaming</a></h3>
-                <p>How the pandemic has sparked<br>fresh opportunities.</p>
+            <div class="div2">
+                <p class="div2-texto">We dive into the next evolution of the web that claims to put the power of the plataform back into the hands of the people. But is it really fulfilling its promise?</p>
+                <button class="butao-link"><a href="#">READ MORE</a></button>
             </div>
         </section>
-    </article>
-   </main>
-   <footer>
-   </footer> 
+        <article>
+            <h1 class="art-h1">New</h1>
+            <ul class="alist">
+                <li>
+                    <h2 class="li-h2"><a href="#">Hydrogen VS Electric Cars</a></h2>
+                    <p class="art-p">Will hudrogen-fueled cars ever catch up to EVs?</p>
+                </li>
+                <li>
+                    <h2 class="li-h2"><a href="#">The Downsides of AI Artistry</a></h2>
+                    <p class="art-p">What are the possible adverse effect of on-demand AI image generation?</p>
+                </li>
+                <li>
+                    <h2 class="li-h2"><a href="#">Is VC Funing Drying Up?</a></h2>
+                    <p class="art-p">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <section class="sec_secundaria">
+
+        <div class="sec-div">
+            <img src="images/image-retro-pcs.jpg" alt="retro pc" class="sec_secundariaimg">
+            <h1 class="sec-h1">01</h1>
+            <h2 class="sec_secundariah2"><a href="#">Reviving Retro PCs</a></h2>
+            <p class="sec_secundariap">What happens whem old PCs are given modern upgrades?</p>
+        </div>
+                
+                
+        <div class="sec-div">
+            <img src="images/image-top-laptops.jpg" alt="laptops" class="sec_secundariaimg">
+            <h1 class="sec-h1">02</h1>
+            <h2 class="sec_secundariah2"><a href="#">Top Laptops of 2022</a></h2>
+            <p class="sec_secundariap">Our best picks for various needs and budgets.</p>
+        </div>
+                
+                
+        <div class="sec-div">
+            <img src="images/image-gaming-growth.jpg" alt="gaming" class="sec_secundariaimg">
+            <h1 class="sec-h1">03</h1>
+            <h2 class="sec_secundariah2"><a href="#">The Growth of Gaming</a></h2>
+            <p class="sec_secundariap">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+
+    </section>
+    <script src="javaScript.js"></script>
 </body>
 </html>
